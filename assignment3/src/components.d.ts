@@ -14,6 +14,14 @@ export namespace Components {
     }
     interface AppRoot {
     }
+    interface AppStartbildschirm {
+        "test": string;
+    }
+    interface MenueFooter {
+    }
+    interface StartDesign {
+        "benennung": string;
+    }
 }
 declare global {
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
@@ -34,10 +42,31 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLAppStartbildschirmElement extends Components.AppStartbildschirm, HTMLStencilElement {
+    }
+    var HTMLAppStartbildschirmElement: {
+        prototype: HTMLAppStartbildschirmElement;
+        new (): HTMLAppStartbildschirmElement;
+    };
+    interface HTMLMenueFooterElement extends Components.MenueFooter, HTMLStencilElement {
+    }
+    var HTMLMenueFooterElement: {
+        prototype: HTMLMenueFooterElement;
+        new (): HTMLMenueFooterElement;
+    };
+    interface HTMLStartDesignElement extends Components.StartDesign, HTMLStencilElement {
+    }
+    var HTMLStartDesignElement: {
+        prototype: HTMLStartDesignElement;
+        new (): HTMLStartDesignElement;
+    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
+        "app-startbildschirm": HTMLAppStartbildschirmElement;
+        "menue-footer": HTMLMenueFooterElement;
+        "start-design": HTMLStartDesignElement;
     }
 }
 declare namespace LocalJSX {
@@ -48,10 +77,21 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
+    interface AppStartbildschirm {
+        "test"?: string;
+    }
+    interface MenueFooter {
+    }
+    interface StartDesign {
+        "benennung"?: string;
+    }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-profile": AppProfile;
         "app-root": AppRoot;
+        "app-startbildschirm": AppStartbildschirm;
+        "menue-footer": MenueFooter;
+        "start-design": StartDesign;
     }
 }
 export { LocalJSX as JSX };
@@ -61,6 +101,9 @@ declare module "@stencil/core" {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+            "app-startbildschirm": LocalJSX.AppStartbildschirm & JSXBase.HTMLAttributes<HTMLAppStartbildschirmElement>;
+            "menue-footer": LocalJSX.MenueFooter & JSXBase.HTMLAttributes<HTMLMenueFooterElement>;
+            "start-design": LocalJSX.StartDesign & JSXBase.HTMLAttributes<HTMLStartDesignElement>;
         }
     }
 }

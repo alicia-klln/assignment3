@@ -1,0 +1,33 @@
+.menue-footer {
+    background: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 10px auto;
+    border-radius: 20px;
+    height: fit-content;
+    width: 100%;
+}
+
+button {
+  background: #00398D;
+  color: white;
+  margin: 0px 4px;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 30px;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
+  outline: 0;
+  letter-spacing: .04em;
+  transition: all .15s ease;
+  cursor: pointer;
+}
+.flex-container {
+    width: 100%;
+    justify-content: center; /* mittig */
+    flex-direction: row;
+    align-items: flex-end; /* mittig */
+    display: flex;
+  }
+  

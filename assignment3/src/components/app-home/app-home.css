@@ -1,9 +1,11 @@
 .app-home {
   padding: 10px;
 }
-
+h1 {
+  margin-top: 300px;
+}
 button {
-  background: #5851ff;
+  background: rgb(0, 0, 0);
   color: white;
   margin: 8px;
   border: none;
@@ -17,10 +19,23 @@ button {
   letter-spacing: .04em;
   transition: all .15s ease;
   cursor: pointer;
-}
   
+}
 button:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.1);
   transform: translateY(1px);
 }
+.flex-container {
+  justify-content: center; /* mittig */
+  align-items: center; /* mittig */
+  display: flex;
+  flex-direction: column;
+}
+.inhalt {
+  height: 520px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+}
+
+
 
