@@ -7,28 +7,64 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { MatchResults, } from "@stencil/router";
 export namespace Components {
+    interface AppEmpfehlungen {
+        "test": string;
+    }
     interface AppHome {
+    }
+    interface AppOutfitvorschlaege {
+        "test": string;
+    }
+    interface AppProduktbewertung {
+        "test": string;
+    }
+    interface AppProduktseite {
+        "test": string;
     }
     interface AppProfile {
         "match": MatchResults;
     }
     interface AppRoot {
     }
-    interface AppStartbildschirm {
+    interface AppUebersicht {
         "test": string;
     }
     interface MenueFooter {
     }
-    interface StartDesign {
+    interface ProduktVorschau {
         "benennung": string;
     }
 }
 declare global {
+    interface HTMLAppEmpfehlungenElement extends Components.AppEmpfehlungen, HTMLStencilElement {
+    }
+    var HTMLAppEmpfehlungenElement: {
+        prototype: HTMLAppEmpfehlungenElement;
+        new (): HTMLAppEmpfehlungenElement;
+    };
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
     }
     var HTMLAppHomeElement: {
         prototype: HTMLAppHomeElement;
         new (): HTMLAppHomeElement;
+    };
+    interface HTMLAppOutfitvorschlaegeElement extends Components.AppOutfitvorschlaege, HTMLStencilElement {
+    }
+    var HTMLAppOutfitvorschlaegeElement: {
+        prototype: HTMLAppOutfitvorschlaegeElement;
+        new (): HTMLAppOutfitvorschlaegeElement;
+    };
+    interface HTMLAppProduktbewertungElement extends Components.AppProduktbewertung, HTMLStencilElement {
+    }
+    var HTMLAppProduktbewertungElement: {
+        prototype: HTMLAppProduktbewertungElement;
+        new (): HTMLAppProduktbewertungElement;
+    };
+    interface HTMLAppProduktseiteElement extends Components.AppProduktseite, HTMLStencilElement {
+    }
+    var HTMLAppProduktseiteElement: {
+        prototype: HTMLAppProduktseiteElement;
+        new (): HTMLAppProduktseiteElement;
     };
     interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {
     }
@@ -42,11 +78,11 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
-    interface HTMLAppStartbildschirmElement extends Components.AppStartbildschirm, HTMLStencilElement {
+    interface HTMLAppUebersichtElement extends Components.AppUebersicht, HTMLStencilElement {
     }
-    var HTMLAppStartbildschirmElement: {
-        prototype: HTMLAppStartbildschirmElement;
-        new (): HTMLAppStartbildschirmElement;
+    var HTMLAppUebersichtElement: {
+        prototype: HTMLAppUebersichtElement;
+        new (): HTMLAppUebersichtElement;
     };
     interface HTMLMenueFooterElement extends Components.MenueFooter, HTMLStencilElement {
     }
@@ -54,56 +90,80 @@ declare global {
         prototype: HTMLMenueFooterElement;
         new (): HTMLMenueFooterElement;
     };
-    interface HTMLStartDesignElement extends Components.StartDesign, HTMLStencilElement {
+    interface HTMLProduktVorschauElement extends Components.ProduktVorschau, HTMLStencilElement {
     }
-    var HTMLStartDesignElement: {
-        prototype: HTMLStartDesignElement;
-        new (): HTMLStartDesignElement;
+    var HTMLProduktVorschauElement: {
+        prototype: HTMLProduktVorschauElement;
+        new (): HTMLProduktVorschauElement;
     };
     interface HTMLElementTagNameMap {
+        "app-empfehlungen": HTMLAppEmpfehlungenElement;
         "app-home": HTMLAppHomeElement;
+        "app-outfitvorschlaege": HTMLAppOutfitvorschlaegeElement;
+        "app-produktbewertung": HTMLAppProduktbewertungElement;
+        "app-produktseite": HTMLAppProduktseiteElement;
         "app-profile": HTMLAppProfileElement;
         "app-root": HTMLAppRootElement;
-        "app-startbildschirm": HTMLAppStartbildschirmElement;
+        "app-uebersicht": HTMLAppUebersichtElement;
         "menue-footer": HTMLMenueFooterElement;
-        "start-design": HTMLStartDesignElement;
+        "produkt-vorschau": HTMLProduktVorschauElement;
     }
 }
 declare namespace LocalJSX {
+    interface AppEmpfehlungen {
+        "test"?: string;
+    }
     interface AppHome {
+    }
+    interface AppOutfitvorschlaege {
+        "test"?: string;
+    }
+    interface AppProduktbewertung {
+        "test"?: string;
+    }
+    interface AppProduktseite {
+        "test"?: string;
     }
     interface AppProfile {
         "match"?: MatchResults;
     }
     interface AppRoot {
     }
-    interface AppStartbildschirm {
+    interface AppUebersicht {
         "test"?: string;
     }
     interface MenueFooter {
     }
-    interface StartDesign {
+    interface ProduktVorschau {
         "benennung"?: string;
     }
     interface IntrinsicElements {
+        "app-empfehlungen": AppEmpfehlungen;
         "app-home": AppHome;
+        "app-outfitvorschlaege": AppOutfitvorschlaege;
+        "app-produktbewertung": AppProduktbewertung;
+        "app-produktseite": AppProduktseite;
         "app-profile": AppProfile;
         "app-root": AppRoot;
-        "app-startbildschirm": AppStartbildschirm;
+        "app-uebersicht": AppUebersicht;
         "menue-footer": MenueFooter;
-        "start-design": StartDesign;
+        "produkt-vorschau": ProduktVorschau;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "app-empfehlungen": LocalJSX.AppEmpfehlungen & JSXBase.HTMLAttributes<HTMLAppEmpfehlungenElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
+            "app-outfitvorschlaege": LocalJSX.AppOutfitvorschlaege & JSXBase.HTMLAttributes<HTMLAppOutfitvorschlaegeElement>;
+            "app-produktbewertung": LocalJSX.AppProduktbewertung & JSXBase.HTMLAttributes<HTMLAppProduktbewertungElement>;
+            "app-produktseite": LocalJSX.AppProduktseite & JSXBase.HTMLAttributes<HTMLAppProduktseiteElement>;
             "app-profile": LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
-            "app-startbildschirm": LocalJSX.AppStartbildschirm & JSXBase.HTMLAttributes<HTMLAppStartbildschirmElement>;
+            "app-uebersicht": LocalJSX.AppUebersicht & JSXBase.HTMLAttributes<HTMLAppUebersichtElement>;
             "menue-footer": LocalJSX.MenueFooter & JSXBase.HTMLAttributes<HTMLMenueFooterElement>;
-            "start-design": LocalJSX.StartDesign & JSXBase.HTMLAttributes<HTMLStartDesignElement>;
+            "produkt-vorschau": LocalJSX.ProduktVorschau & JSXBase.HTMLAttributes<HTMLProduktVorschauElement>;
         }
     }
 }

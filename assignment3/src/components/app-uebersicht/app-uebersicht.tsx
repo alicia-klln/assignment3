@@ -1,11 +1,11 @@
 import { Component, Prop, h } from '@stencil/core';
 
 @Component({
-  tag: 'app-startbildschirm',
-  styleUrl: 'app-startbildschirm.css',
+  tag: 'app-uebersicht',
+  styleUrl: 'app-uebersicht.css',
   shadow: true
 })
-export class AppHome {
+export class AppUebersicht {
   @Prop() test: string;
   
   handleClick(event: UIEvent) {
@@ -19,8 +19,8 @@ export class AppHome {
     return (
       <div class='app-home'>
         <div class="inhalt">
-        <h2>Auswertung</h2>
-        <start-design benennung="Überschrift"></start-design>
+        <h2>Übersicht</h2>
+        <produkt-vorschau></produkt-vorschau>
         </div>
         <menue-footer></menue-footer>        
       </div>

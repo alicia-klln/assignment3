@@ -12,8 +12,9 @@ export class AppHome {
       <div class='app-home'>
         <div class="inhalt">
           <div class="flex-container">
-            <h1 class="flex-items">Shopping</h1>
-            <stencil-route-link url='/startbildschirm'>
+            <div id="logo"></div>
+            <h1>Shopping</h1>
+            <stencil-route-link url='/uebersicht'>
               <button class="flex-items">
                 Loslegen
               </button>

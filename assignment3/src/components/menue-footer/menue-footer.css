@@ -16,7 +16,7 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   padding: 16px 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
   outline: 0;
   letter-spacing: .04em;
