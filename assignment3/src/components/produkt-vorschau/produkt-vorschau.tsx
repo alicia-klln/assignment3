@@ -7,6 +7,8 @@ import { Component, Prop, h } from '@stencil/core';
 })
 export class Produktvorschau {
   @Prop() benennung: string;
+  @Prop() kurztext: string;
+  @Prop() bild: string;
   
   handleClick(event: UIEvent) {
     
@@ -18,9 +20,20 @@ export class Produktvorschau {
   render() {
     return (
         <div class="produkt-vorschau">
-          <h1 class="ueberschrift">{this.benennung}</h1>
-        
+          <div class="arrow-left"></div>
+          <div class="arrow-right"></div>
+
+          <div class="inhalt">
+            <div class="inneres">
+              <h1 id="ueberschrift">{this.benennung}</h1>
+              <img id="produktbild" src={this.bild}></img>
+              <h4>{this.kurztext}</h4>
+            </div>
+            <button id="mehrErfahren">Mehr erfahren</button>
+          </div>
         </div>
+        
+
     );
   }
 }

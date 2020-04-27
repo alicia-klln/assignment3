@@ -14,4 +14,10 @@
       color: #00398D;
       margin: 0px;
   }
+  #kleinesLogo {
+    height: 40px;
+    position: absolute;
+    margin-left: 10px;
+    
+  }
  

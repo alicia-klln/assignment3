@@ -18,10 +18,16 @@ export class AppUebersicht {
   render() {
     return (
       <div class='app-home'>
-        <div class="inhalt">
+        <stencil-route-link url='/'>
+           <img id="kleinesLogo" src="/assets/logo.png"></img>   
+        </stencil-route-link>
         <h2>Übersicht</h2>
-        <produkt-vorschau></produkt-vorschau>
+        <div class="inhalt flex-container">
+          <produkt-vorschau benennung="Tshirt" kurztext="Kurztext" bild="/assets/tshirt.jpg"></produkt-vorschau>
+          <produkt-vorschau benennung="Kleid" kurztext="Kurztext" bild="/assets/kleid.jpg"></produkt-vorschau>
+          <produkt-vorschau benennung="Schuhe" kurztext="Kurztext" bild="/assets/schuhe.jpg"></produkt-vorschau>
         </div>
+        
         <menue-footer></menue-footer>        
       </div>
       

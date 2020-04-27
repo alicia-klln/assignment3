@@ -18,6 +18,9 @@ export class AppProduktbewertung {
   render() {
     return (
       <div class='app-home'>
+        <stencil-route-link url='/'>
+           <img id="kleinesLogo" src="/assets/logo.png"></img>   
+        </stencil-route-link>
         <div class="inhalt">
         <h2>Produktbewertung</h2>
         

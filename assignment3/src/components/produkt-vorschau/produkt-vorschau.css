@@ -1,20 +1,85 @@
 .produkt-vorschau {
-    background: rgb(255, 255, 255);
-    padding: 0px;
-    margin: 10px;
-    border-radius: 0px;
-    border: 2px rgb(167, 167, 167) solid;
-    position: relative;
-    height: 90%;
-    width: auto;
-  }
-
-.ueberschrift{
-    color: white;
-    display: block;
-    font-family: sans-serif;
-    visibility: visible;
-    margin: 5px 15px;
-    font-size: 1.5em;
-    padding: 10px 0px 0px;
+  padding: 0px 20px;
+}
+.inhalt {
+  background: rgb(192, 192, 192);
+  border: 2px white solid;
+  border-radius: 0px;
+  height: 400px;
+  width: 200px;
+  justify-content: flex-start; /* mittig */
+  align-items: stretch; /* mittig */
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.inneres {
+  flex-basis: auto;
+}
+#ueberschrift{
+  color: white;
+  display: block;
+  font-family: sans-serif;
+  visibility: visible;
+  margin: 5px 15px;
+  font-size: 1.5em;
+  padding: 10px 0px 0px;
+  border-bottom: 1px white solid;
+}
+img {
+  max-width: 90%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 0px;
+  margin: 10px 10px;
+  justify-content: end;
+}
+h4 {
+  margin: 0px;
+}
+.arrow-left {
+  width: 0; 
+  position: absolute;
+  margin-left: 5px;
+  margin-top: 170px;
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 25px solid rgb(0, 0, 0);
+}
+.arrow-left:hover {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 25px solid rgb(255, 255, 255);
+}
+.arrow-right {
+  width: 0; 
+  position: absolute;
+  margin-left: 185px;
+  margin-top: 170px;
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 25px solid rgb(0, 0, 0);
+}
+.arrow-right:hover {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 25px solid rgb(255, 255, 255);
+}
+#mehrErfahren {
+  border: 0px;
+  border-radius: 20px;
+  background: #BBD6FF;
+  color: rgb(0, 0, 0);
+  width: fit-content;
+  padding: 10px 15px;
+  margin: auto;
+}
+#mehrErfahren:hover {
+  background: #00398D;
+  color: rgb(255, 255, 255);
+  width: fit-content;
+  padding: 10px 15px;
+  margin: auto;
 }

@@ -33,6 +33,8 @@ export namespace Components {
     }
     interface ProduktVorschau {
         "benennung": string;
+        "bild": string;
+        "kurztext": string;
     }
 }
 declare global {
@@ -136,6 +138,8 @@ declare namespace LocalJSX {
     }
     interface ProduktVorschau {
         "benennung"?: string;
+        "bild"?: string;
+        "kurztext"?: string;
     }
     interface IntrinsicElements {
         "app-empfehlungen": AppEmpfehlungen;

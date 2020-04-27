@@ -12,19 +12,18 @@ export class AppHome {
       <div class='app-home'>
         <div class="inhalt">
           <div class="flex-container">
-            <div id="logo"></div>
+            <div>
+              <img id="logo" src="/assets/logo.png"></img>
+            </div>
             <h1>Shopping</h1>
             <stencil-route-link url='/uebersicht'>
-              <button class="flex-items">
+              <button>
                 Loslegen
               </button>
             </stencil-route-link>
           </div>
         </div>
-        <div class="flex-container">
-          <menue-footer></menue-footer>
-        </div>
-        
+          <menue-footer></menue-footer>        
       </div>
     );
   }
